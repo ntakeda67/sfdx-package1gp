@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HogePackage2</fullName>
+    <description>HogeDayo</description>
+    <setupWeblink>unmanagedConfigureLink</setupWeblink>
+    <types>
+        <members>Account.Active__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Account-ja</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
+        <members>unmanagedConfigureLink</members>
+        <name>CustomPageWebLink</name>
+    </types>
+    <types>
+        <members>Account-WithActivate</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>ja</members>
+        <name>Translations</name>
+    </types>
+    <types>
+        <members>Account.appexchangelink</members>
+        <name>WebLink</name>
+    </types>
+    <version>46.0</version>
+</Package>
