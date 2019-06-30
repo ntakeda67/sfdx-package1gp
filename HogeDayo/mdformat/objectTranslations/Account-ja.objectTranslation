@@ -16,8 +16,8 @@
         <name>appexchangelink</name>
     </webLinks>
     <fields>
-        <label>有効ver2</label>
-        <name>Active__c</name>
+        <label>有効その2</label>
+        <name>ActiveVer2__c</name>
         <picklistValues>
             <masterLabel>No</masterLabel>
             <translation><!-- No --></translation>

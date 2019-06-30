@@ -6,7 +6,8 @@
   </types>
   <types>
     <name>CustomField</name>
-    <members>Account.Active__c</members>
+    <members>Account.ActiveVer2__c</members>
+    <members>Lead.UseForPackage__c</members>
   </types>
   <types>
     <name>WebLink</name>

@@ -16,13 +16,22 @@ sfdx force:org:create -f ./config/project-scratch-def.json -a devHoge13
 sfdx force:org:open -u devHoge13
 sfdx force:source:push -u devHoge13
 
-sfdx force:package1:version:create -i 0330I0000006hbW -d "HogeDayo From SFDX" -k p@ss1234 -n HogeSfdxVersion -r "http://example.com?q=relasenote" -p "http://example.com?q=postinstall" -v "1.3" - u n.takeda67+sf@gmail.com"
+
 ```
 
 ## Appdx.
 
+### convert to metadata and deploy. (use for deploying to the packaging org)
+
 ```
-# convert to metadata and deploy.
+rmdir mdformat
+mkdir mdformat
 sfdx force:source:convert -r force-app/main/default/ -d mdformat
-sfdx force:mdapi:deploy -u devHoge13 -d mdformat -w 2 --verbose
+sfdx force:mdapi:deploy -u packaging -d mdformat -w 2 --verbose
+```
+
+### for packaging org
+
+```
+sfdx force:package1:version:create -i 0330I0000006hbW -d "HogeDayo From SFDX" -k p@ss1234 -n HogeSfdxVersion -r "http://example.com?q=relasenote" -p "http://example.com?q=postinstall" -v "1.3" - u n.takeda67+sf@gmail.com"
 ```
